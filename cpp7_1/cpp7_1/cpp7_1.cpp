@@ -1,12 +1,14 @@
-﻿#include <iostream>
+#include <iostream>
 #define MODE 0
 #if !defined MODE
 #error MODE not defined
 #endif
 
+#if MODE == 1
 int add(const int& x, const int& y) {
 	return x + y;
 }
+#endif
 
 int main()
 {
